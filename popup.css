@@ -1,0 +1,10 @@
+body {
+    width: 300px;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-style:italic
+  }
+  button {
+    display: block;
+    margin: 20px 0;
+  }
+  

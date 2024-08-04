@@ -1,0 +1,9 @@
+{
+    "manifest_version": 3,
+    "name": "Weather App Chrome Extension",
+    "version": "1.0",
+    "description": "A simple Weather App Chrome extension.",
+    "action": {
+      "default_popup": "index.html"
+  }
+}
