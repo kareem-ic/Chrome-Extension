@@ -15,6 +15,7 @@ function getWeather() {
             response.json() })
         .then(data => {
             displayWeather(data);
+ 
         })
         .catch(error => {
             console.error('Error fetching current weather data', error);
