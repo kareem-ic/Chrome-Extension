@@ -3,25 +3,30 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' 'unsafe-hashes' 'wasm-unsafe-eval' 'inline-speculation-rules'">    <title></title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script integrity="sha256-randomly_generated_hash" src="your_external_script.js"></script>
   </head>
   <body>
   </body>
+   <!-- Container for the Weather App elements -->
   <div id="weather-container">
     <h2>Weather App</h2>
+    <!-- Input field for entering the city name -->
     <input type="text" id="city" placeholder="Enter city">
+    <!-- Button to trigger the weather search -->
     <button onclick="getWeather()">Search</button>
-
+    <!-- When clicked, this button will call the `getWeather()` function defined in the JavaScript file. -->
     <img id="weather-icon" alt="Weather Icon">
-
+<!-- Div to display the current temperature -->
     <div id="temp-div"></div>
-
+<!-- Div to display additional weather information -->
     <div id="weather-info"></div>
-
+<!-- Div to display the hourly forecast -->
     <div id="hourly-forecast"></div>
   </div>
+  <!-- Linking the JavaScript file for the popup functionality -->
   <script src="popup.js"></script>
+  <!-- This script is responsible for additional functionality related to the weather app, likely including event handling and API interaction. -->
 </html>
